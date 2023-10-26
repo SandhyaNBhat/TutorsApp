@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         println("Test Branch")
 
+        println("NewFromMaster")
+
         startbtn.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
