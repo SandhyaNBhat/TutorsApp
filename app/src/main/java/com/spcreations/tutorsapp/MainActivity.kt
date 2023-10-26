@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        Introducing errors
 
 
 
