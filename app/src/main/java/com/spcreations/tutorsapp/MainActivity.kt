@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         println("This is the initial version")
 
+        println("Test Branch")
+
         startbtn.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
