@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainDashboardActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7FACE9"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_user_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/shapes_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_dashboard_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_below="@+id/iv_user_pic"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_user_pic"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="Tutor's dashboard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_batch_creation"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle"
+            android:text="Batch Creation" />
+
+        <Button
+            android:id="@+id/btn_student_creation"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toRightOf="@+id/btn_batch_creation"
+            android:background="@drawable/rectangle"
+            android:text="Student Registration" />
+
+        <Button
+            android:id="@+id/btn_manage_class"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/btn_batch_creation"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle"
+            android:text="@string/manage_batches" />
+
+        <Button
+            android:id="@+id/btn_manage_calender"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btn_manage_class"
+            android:layout_below="@+id/btn_student_creation"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle"
+            android:text="@string/manage_students" />
+
+
+        <Button
+            android:id="@+id/btn_view_student"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/btn_manage_class"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle"
+            android:text="Manage Classes" />
+
+        <Button
+            android:id="@+id/btn_view_batches"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btn_view_student"
+            android:layout_below="@+id/btn_manage_calender"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle"
+            android:text="Manage Calender" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
