@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         println("Change 2")
         println("Change 3")
+        println("Change 4")
 
         startbtn.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
