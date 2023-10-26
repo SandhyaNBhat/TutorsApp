@@ -17,10 +17,14 @@ class MainActivity : AppCompatActivity() {
 
         val startbtn = binding.btnStart
 
+        println("This is the initial version")
+
         startbtn.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
         }
+
+
 
 
     }
