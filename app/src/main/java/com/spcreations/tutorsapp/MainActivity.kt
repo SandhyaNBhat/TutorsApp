@@ -23,8 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         println("NewFromMaster")
 
-        println("Change 2")
-        println("Change 3")
+        println("change 5")
 
         startbtn.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
