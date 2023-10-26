@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         println("NewFromMaster")
 
+        println("Change 2")
+
         startbtn.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
