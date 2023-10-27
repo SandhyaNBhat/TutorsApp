@@ -19,11 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         println("This is the initial version")
 
-        println("Test Branch")
-
-        println("NewFromMaster")
-
-        println("change 5")
+       println("Changes done by other users")
 
 
         startbtn.setOnClickListener {
